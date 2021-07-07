@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: name-stateful-set
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: name-stateful-set
+      name: name-stateful-set
+    spec:
+      containers:
+        - name: container-name
+          image: imageName:latest
+          ports:
+            - containerPort: 80
+          envFrom:
+            - configMapRef:
+              name: name-configMap
+          volumeMounts:
+            - name: images
+              mountPath: /path_to_images
+            - name: session
+              mountPath: /path_to_session
+  selector:
+    matchLabels:
+      app: name-label
+  serviceName: service-name

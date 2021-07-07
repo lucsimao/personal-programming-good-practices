@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-pod-replicaset
+spec:
+  template:
+    metadata:
+      name: my-pod-app
+      labels:
+        app: my-pod-label
+  spec:
+    containers:
+      - name: my-container
+        image: my-image:latest
+        ports:
+          - containerPort: 80
+        envFrom:
+          - configMapRef:
+              name: my-configmap
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-pod-label

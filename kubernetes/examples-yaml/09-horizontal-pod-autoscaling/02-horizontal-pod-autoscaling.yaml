@@ -1,0 +1,19 @@
+apiVersion: autoscaling/v2beta2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: name-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1 # same version from target deployment
+    kind: Deployment
+    name: name-deployment # same name as target deployment
+  minReplicas: 1
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resouce:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 50 # se o consumo médio passar do resources/requests/cpu (10m) no caso 5m (50%), ele irá replicar o pod
+

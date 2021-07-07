@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: db-mysql
+  labels:
+    app: db-mysql
+spec:
+  containers:
+    - name: container-mysql
+      image: mysql:latest
+      ports:
+        - containerPort: 3306
+  envFrom:
+    - configMapRef:
+      name: db-configmap

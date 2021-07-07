@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 3
+  template:
+    metadata:
+      name: nginx-pod
+      labels:
+        app: nginx-pod
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx:stable
+          ports:
+            -containerPort: 80
+    livenessProbe:
+      httpGet:
+        path: /
+        port: 80
+      periodSeconds: 10
+      failureThreshold: 3
+      initialDelaySeconds: 20
+    readinessProbe:
+      httpGet:
+        path: /home-page
+        port: 80
+      periodSeconds: 10
+      failureThreshold: 5
+      initialDelaySeconds: 3
+  selector:
+    matchLabels: nginx-pod
