@@ -9,7 +9,7 @@ const statement = function (invoice, plays) {
   }).format;
 
   for (let perf of invoice.performances) {
-    const play = plays[perf.playId];
+    const play = playFor(perf);
     let thisAmount = amountFor(perf, play);
     // soma créditos por volume
     volumeCredits += Math.max(perf.audience - 30, 0);
@@ -46,6 +46,10 @@ const statement = function (invoice, plays) {
         throw new Error(`unknown type: ${play.type}`);
     }
     return result;
+  }
+
+  function playFor(aPerformance) {
+    return plays[aPerformance.playId];
   }
 };
 
