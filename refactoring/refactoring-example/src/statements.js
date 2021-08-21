@@ -10,26 +10,7 @@ const statement = function (invoice, plays) {
 
   for (let perf of invoice.performances) {
     const play = plays[perf.playId];
-    let thisAmount = 0;
-
-    switch (play.type) {
-      case 'tragedy':
-        thisAmount = 40000;
-        if (perf.audience > 30) {
-          thisAmount += 1000 * (perf.audience - 30);
-        }
-        break;
-      case 'comedy':
-        thisAmount = 30000;
-        if (perf.audience > 20) {
-          thisAmount += 10000 + 500 * (perf.audience - 20);
-        }
-        thisAmount += 300 * perf.audience;
-        break;
-      default:
-        throw new Error(`unknown type: ${play.type}`);
-    }
-
+    let thisAmount = amountFor(perf, play);
     // soma créditos por volume
     volumeCredits += Math.max(perf.audience - 30, 0);
     // soma um crédito extra para cada dez espectadores de comédia
@@ -44,6 +25,28 @@ const statement = function (invoice, plays) {
   result += `Amount owed is ${format(totalAmount / 100)}\n`;
   result += `You earned ${volumeCredits} credits\n`;
   return result;
+
+  function amountFor(aPerformance, play) {
+    let result = 0;
+    switch (play.type) {
+      case 'tragedy':
+        result = 40000;
+        if (aPerformance.audience > 30) {
+          result += 1000 * (aPerformance.audience - 30);
+        }
+        break;
+      case 'comedy':
+        result = 30000;
+        if (aPerformance.audience > 20) {
+          result += 10000 + 500 * (aPerformance.audience - 20);
+        }
+        result += 300 * aPerformance.audience;
+        break;
+      default:
+        throw new Error(`unknown type: ${play.type}`);
+    }
+    return result;
+  }
 };
 
 module.exports = { statement };
