@@ -1,0 +1,14 @@
+{
+  "name": "refactoring-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/statements.js",
+  "scripts": {
+    "test": "jest ./src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
