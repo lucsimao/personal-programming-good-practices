@@ -10,10 +10,7 @@ const statement = function (invoice, plays) {
 
   for (let perf of invoice.performances) {
     // soma créditos por volume
-    volumeCredits += Math.max(perf.audience - 30, 0);
-    // soma um crédito extra para cada dez espectadores de comédia
-    if ('comedy' === playFor(perf).type)
-      volumeCredits += Math.floor(perf.audience / 5);
+    volumeCredits += volumeCreditsFor(perf);
 
     //exibe a linha para esta requisição
     result += ` ${playFor(perf).name}: ${format(amountFor(perf) / 100)} (${
@@ -49,6 +46,15 @@ const statement = function (invoice, plays) {
 
   function playFor(aPerformance) {
     return plays[aPerformance.playId];
+  }
+
+  function volumeCreditsFor(aPerformance) {
+    let result = 0;
+    result += Math.max(aPerformance.audience - 30, 0);
+    // soma um crédito extra para cada dez espectadores de comédia
+    if ('comedy' === playFor(aPerformance).type)
+      result += Math.floor(aPerformance.audience / 5);
+    return result;
   }
 };
 
