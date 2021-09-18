@@ -2,13 +2,19 @@
 
 ## Logs e Métricas
 
-Os microserviços devem agregar logs e métricas para facilitar a identificação e correção de falhas e também o impacto do serviço na lógica de negócios.
-
+Os micro-serviços devem agregar logs e métricas para facilitar a identificação e correção de falhas e também o impacto do serviço na lógica de negócios.
 
 ## [Swagger-api](https://swaggerstats.io/)
+
 ## Dynatrace
+
 ## Prometheus
-## Grafana
+
+## [Grafana](https://grafana.com/grafana/dashboards/893)
+
+### Exemplo de Dashboard
+
+https://grafana.com/grafana/dashboards/3091
 
 # Referências
 

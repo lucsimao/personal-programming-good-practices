@@ -64,3 +64,9 @@ toThrow
 # References
 
 https://jestjs.io/docs/using-matchers#numbers
+
+# Jest In Case (Parametrized Test)
+
+https://github.com/atlassian/jest-in-case
+
+https://github.com/atlassian/gremlins.js
