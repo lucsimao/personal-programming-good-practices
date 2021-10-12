@@ -25,6 +25,7 @@ Repository
 - [ ] Gitflow
 - [ ] Conventional Commits
 - [ ] CI/CD (Github Actions, GitlabCi, BitbucketCI, Jenkins)
+- [ ] Semantic-Releases
 
 Performance
 
@@ -47,3 +48,21 @@ Logging
 Debugging
 
 - [ ] Use your editor debug mode instead console.log in code
+
+Devops
+
+- [ ] Healthcheck Route
+- [ ] Metrics Routes
+- [ ] Validate Environment Variables (Ex: joi validator)
+
+Virtualization
+
+- [ ] Create a virtualization config (e.g. docker-compose.yml) to setup your application with one command
+
+
+
+- [ ] lint-staged
+- [ ] commitlint
+# References
+
+https://microservices.io/patterns/observability/health-check-api.html
