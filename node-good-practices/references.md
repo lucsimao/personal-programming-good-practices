@@ -88,3 +88,21 @@ https://github.com/boyney123/mockit
 https://www.guru99.com/smoke-testing.html
 
 https://github.com/pagarme/cafe-com-testes/blob/main/artigos/heuristica-vader.md
+
+https://harperdb.io/
+
+https://github.com/danileao/elasticsearch/watchers
+
+https://developer.mozilla.org/pt-BR/docs/Glossary/Hoisting
+
+Mock implementation for the 2nd time
+
+https://stackoverflow.com/questions/64983001/jest-mockimplementationonce-is-not-working-for-2nd-time
+
+![](assets/20211020_001716_image.png)
+
+https://stackoverflow.com/questions/58151010/difference-between-resetallmocks-resetmodules-resetmoduleregistry-restoreallm
+
+![](assets/20211020_003303_image.png)
+
+![](assets/20211020_003225_image.png)
