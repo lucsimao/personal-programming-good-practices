@@ -99,3 +99,21 @@ router-outlet
 # Http Server
 
 # Debouncing
+
+# FakeAsync
+
+## Tick
+
+# TestBed
+
+# nativeElement
+
+## querySelector
+
+## DebugElement
+
+# HostListener and Custom Directives
+
+# Fixture DetectChanges
+
+- dispara o ng on init
