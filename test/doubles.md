@@ -49,7 +49,12 @@ Podemos retornar um fake a partir de um servidor local, criado especificamente p
 
 Para simular grandes quantidades de dados em memória vindos de uma chamada assíncrona de um banco de dados ou de uma API externa.
 
+# Dummies
+
+Um objeto "nulo", que não fazem nada, mas que possui um tipo. São importantes para representações padrão de um objeto.
+
 # Referências
 
 [Pablo Rodrigo Darde](https://medium.com/rd-shipit/test-doubles-mocks-stubs-fakes-spies-e-dummies-a5cdafcd0daf)
 [Jest](https://jestjs.io/docs/manual-mocks)
+https://medium.com/trainingcenter/testes-unit%C3%A1rios-mocks-stubs-spies-e-todas-essas-palavras-dif%C3%ADceis-f2765ac87cc8
