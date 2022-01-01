@@ -29,6 +29,16 @@ O CommandStack é uma camada orientada a comportamento onde toda intenção de n
 - As consultas na QueryStack são feitas de forma separada e independente, de forma que não dependem do processamento da CommandStack
 - É possível escalar separadamente os processos da CommandStack e da QueryStack
 
+
+## [Sincronização CQRS](https://medium.com/@rafael.cdc97/iniciando-com-cqrs-e-eventsourcing-md-de23a64b59a7)
+
+- Atualização Automática: A atualização automática é disparada de forma síncrona, então no momento que é feita a requisição o evento de commit é realizado.
+- Atualização Eventual: Sendo a melhor maneira de se implementar CQRS a atualização eventual ocorre de forma assíncrona, geralmente é utilizado serviços de fila como RabbitMQ e Apache Kafka proporcionando a consistência eventual para a base desnormalizada.
+- Atualização Controlada: Uma espécie de JOB é executado, assim é disparado um evento para a sincronização periodicamente.
+- Atualização por demanda: A cada consulta é realizada uma verificação da consistência entre as bases, caso esteja desatualizada, é realizado a consistência de atualização.
+
+
+
 # Referências
 
 [Microserviços: Padrões de Projeto](https://cursos.alura.com.br/course/microsservicos-padroes-projeto)
