@@ -11,3 +11,7 @@ Diferente do operador OR (||), que retorna o lado direito caso o valor esquerdo 
 - ""
 - null
 - undefined
+
+# definite assignment assertions
+
+# [Array.GroupBy](https://github.com/tc39/proposal-array-grouping)
