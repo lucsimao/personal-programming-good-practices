@@ -117,3 +117,29 @@ router-outlet
 # Fixture DetectChanges
 
 - dispara o ng on init
+
+# Observable
+
+- Quando queremos um valor de forma imperativa: função
+- Quando queremos iterar sobre uma coleção de valores: iterator
+- Quando precisamos um valor e esperar uma requisição de forma reativa: Promise
+- Quando precisamos iterar sobre uma coleção de forma reativa: Observable
+
+# [RxJs](https://rxjs-dev.firebaseapp.com/guide/overview)
+
+- Pipe - recebe uma stream funções que manipulam o fluxo de informações
+  - map
+  - tap
+  - pluck - pluck('nome_atributo') retorna um array com a propriedade nome_atributo extraída. Equivalente a: map((a) => a.nome_atributo)
+  - debounceTime - espera um certo tempo antes de passar a próxima operação
+  - filter
+  - distinctUntilChanged - só passa para o próximo operador caso o valor seja diferente do anterior
+  - [switchMap](https://www.learnrxjs.io/learn-rxjs/operators/transformation/switchmap) - troca para um novo observable
+- PipeAsync: O Observable tem sua inicialização lazy, de forma que a requisição somente é feita quando o componente se inicializou e o subscribe foi realizado
+
+# [Diagramas de Marble (Bolinhas de gude)](https://rxmarbles.com/)
+
+- A primeira seta representa o fluxo de dados, stream, cada bolinha é um elemento
+- A segunda seta é o resultado da ação que o operador realiza (map, filter, reduce, pluck, etc)
+
+# Busca Type Ahead
