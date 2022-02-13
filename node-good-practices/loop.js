@@ -1,3 +1,5 @@
+/**Referência: https://www.luiztools.com.br/post/entendendo-o-nodejs-event-loop/ */
+
 console.log('1.1 script start');
 
 const interval = setInterval(() => {
