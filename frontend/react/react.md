@@ -211,3 +211,32 @@ Por isso, lembre-se de declarar seus componentes e styled components fora dos m�
 - [Events](https://developer.mozilla.org/pt-BR/docs/Web/Events):
   fireEvent.click
   fireEvent.change
+
+## [Queries](https://testing-library.com/docs/react-testing-library/cheatsheet/)
+
+## Get by e findby
+
+- GetBy não assincrono
+- FindBy retorna uma promise, pode ser assincrono
+
+## Tipos de Teste
+
+- Unitários
+  - Funções
+  - Componentes
+  - Snapshots
+- Integração
+  - Testar a integração do app com os outros componentes
+- Funcionais
+
+  - Testes end2end, o fluxo completo, abrir o navegador e executar
+
+- Quando não testar?
+  - Código descartável
+    - POCs
+    - Página para campanha de marketing
+    - Teste A/B (dependendo da confiabilidade)
+
+# useCallback
+
+# UseMemo
