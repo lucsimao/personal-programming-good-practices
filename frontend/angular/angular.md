@@ -143,3 +143,5 @@ router-outlet
 - A segunda seta é o resultado da ação que o operador realiza (map, filter, reduce, pluck, etc)
 
 # Busca Type Ahead
+
+- Filtrar e preencher enquanto busca
