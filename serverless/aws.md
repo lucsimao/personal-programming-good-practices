@@ -37,3 +37,9 @@
 # Paginação
 
 # [sls deploy --stage qa](https://www.serverless.com/framework/docs/providers/aws/cli-reference/deploy)
+
+# Rekognition - Análise de imagens
+
+aws.amazon.com/pt/rekognition
+
+# AWS SDK for Python Boto
