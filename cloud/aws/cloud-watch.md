@@ -59,3 +59,6 @@ EX: criar uma instância do ec2 (Elastic Compute Cloud)
   - adicionar a policy de sns access para a lambda
 
 - Notificação via slack
+  - no slack, criar um webhook
+  - pegar a url do webhook
+    - fazer o lambda fazer um post no web_hook
