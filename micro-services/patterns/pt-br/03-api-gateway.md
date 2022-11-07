@@ -14,6 +14,12 @@ Um Gateway de API aceita uma solicitação remota e retorna uma resposta de form
 - Em arquitetura de micro-serviços, uma solicitação pode exigir chamada de diversas apis, o Gateway serve para tornar essas chamadas transparentes
 - É possível remover ou adicionar novos serviços ao backend de forma transparente para os clientes
 
+Diferenças do api gateway para o reverse proxy
+
+![](assets/20221006_230514_image.png)
+
+[Fonte](https://www.baeldung.com/cs/api-gateway-vs-reverse-proxy)
+
 # Referências
 
 [Microserviços: Padrões de Projeto](https://cursos.alura.com.br/course/microsservicos-padroes-projeto)
