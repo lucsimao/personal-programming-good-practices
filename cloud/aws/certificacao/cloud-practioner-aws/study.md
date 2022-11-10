@@ -91,6 +91,18 @@
 - DynamoDb
 - Redshift
 
+## Preços
+
+- Calculadora de preços aws
+- AWS Price List API
+- Consolidated billing for AWS Organizations
+- AWS Cost and Usage Reports
+- AWS Cost Explorer
+- AWS Budgets
+- Alarmes de cobrança cloud watch
+- Opções de preço do EC2
+- Tags de Alocação de custo
+
 **Cognito**:
 
 - Sincronismo vários dispositivos
@@ -411,3 +423,5 @@
 - dados sensíveis
 
 **License Manager**
+
+**Simple Email Services**
