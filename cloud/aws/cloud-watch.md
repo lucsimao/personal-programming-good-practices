@@ -62,3 +62,5 @@ EX: criar uma instância do ec2 (Elastic Compute Cloud)
   - no slack, criar um webhook
   - pegar a url do webhook
     - fazer o lambda fazer um post no web_hook
+
+@

@@ -1,22 +1,88 @@
-1. Fale sobre os modelos de computação em nuvem, IaaS, PaaS, SaaS
-1. Fale sobre os modelos de implantação de computação em nuvem (cloud, hibrid, on-premise)
-1. Quando você utilizaria um serviço de nuvem híbrida?
-1. Fale 5 casos de uso para utilização da nuvem híbrida.
-1. Cite 3 clientes que utilizam a nuvem híbrida da AWS
-1. O que uma VPC
-1. Quantas regiões existem na aws?
-1. Quantas zonas de disponibilidade existem na aws?
-1. Explique a vantagem de AZ (zona de disponibilidade) e de multi regions
-1. Quais são os 5 planos de suporte da AWS? Explique a diferença entre eles
+1.  **Fale sobre os modelos de computação em nuvem, IaaS, PaaS, SaaS.**
+    R:
+
+    - IaaS: Infrastructure as a Service
+    - PaaS: Platform as a Service
+    - SaaS: Software as a Service
+
+1.  **Fale sobre os modelos de implantação de computação em nuvem (cloud, hibrid, on-premise)**
+    R:
+
+    - Cloud - modelo completamente em cloud
+    - Híbrido - modelo parcialmente na nuvem
+    - On-premise - modelo completamente local
+
+1.  **Quando você utilizaria um serviço de nuvem híbrida?**
+1.  **Fale 5 casos de uso para utilização da nuvem híbrida.**
+1.  **Cite 3 clientes que utilizam a nuvem híbrida da AWS**
+1.  ** O que uma VPC**
+
+    - Virtual Private Cloud são redes virtuais que permitem o cliente configurar questões de segurança, conectividade e posicionamento de recursos.
+
+1.  **Quantas regiões existem na aws?**
+    27
+1.  **Quantas zonas de disponibilidade existem na aws?**
+    81
+1.  **Explique a vantagem de AZ (zona de disponibilidade) e de multi regions**
+    R: Zonas de disponibilidade é um ou mais data centers distintos com energia, rede e conectividade redundante em uma mesma região AWS.
+    As AZs permitem ao cliente ao cliente trabalhar com alta disponibilidade, tolerância a falhas e escalabilidade em níveis superiores aos que um único data center oferece.
+1.  **Quais são os 5 planos de suporte da AWS? Explique a diferença entre eles**
+    R:
+
+        - Basic: para todos os clientes
+           - atendimento ao cliente, documentação, whitepapers, aws re post
+           - AWS Trusted Advisor
+           - AWS Personal Health Dashboard
+
+        - Developer
+           - Acesso ao Cloud Support pela  WEB em horário comercial.
+
+        - Business
+           - Acesso aos engenheiros de suporte da nuvem por telefone, web e chat  24/7
+           - Api do AWS Suport
+           - Suporte a software de terceiros
+
+        - Enterprise on Ramp
+            - Orientações de arquitetura consultivas de acordo com as aplicações
+            - Grupo de gerentes de conta técnicos para oferecer orientação proativa e acesso a programas e especialistas da aws
+            - Equipe de suporte do concierge
+
+        - Enterprise
+            - Acesso a laboratórios anto guiados online
+            - Recomendações priorizadas do Trusted Advisor
+            - Acesso a Detecção e resposta a incidentes
+
+1.  **É possível que algum serviço da aws esteja disponível em alguma região e não em outra?**
+
+    - Sim
+
+1.  **fale sobre o cloudping.info (não é um serviço da aws)**
 
 # Armazenamento
 
-1. O que é o Amazon Simple Storage Service - S3?
-1. Explique os diferentes serviços de armazenamento do S3
-1. O que é Elastic Block Storage - EBS?
-1. O que é Elastic File System - EFS
-1. O que é Amazon Storage Gateway
-1. O que é AWS Backups
+1. **O que é o Amazon Simple Storage Service - S3?**
+
+   - Simple storage service é o serviço de armazenamento de dados da aws que oferece escalabilidade, disponibilidade de dados, segurança e performance.
+
+1. **Explique os diferentes serviços de armazenamento do S3 (classes de armazenamento)**
+   R: Por padrão, as classes de armazenamento armazenam dados em no mínimo 3 zonas de disponibilidade
+   - Standard: padrão, alta resiliência, acessos, etc
+   - Intelligent Tiering: serviço que altera a classe de armazenamento de forma automática baseada no histórico de uso do arquivo
+   - Infrequent Access: dados usado com pouca frequência, mas que precisam de retorno rápido quando acessados.
+   - One Zone Ia: semelhante ao Standard IA, mas armazena somente em uma zona de disponibilidade
+   - Glacier: Dados que são usados com muito pouca frequência, na maioria das vezes, somente para fins de auditoria
+     - Instant Retrieval: (1 vez por trimestre e com acesso instantâneo)
+     - Flexible Retrieval: (1 ou 2 vezes por ano e recuperados de forma assíncrona)
+     - Deep Archive (7 a 10 anos)
+1. **O que é Elastic Block Storage - EBS?**
+   R: Em resumo: são os volumes do EC2.
+   É um serviço de armazenamento em blocos projetado para o EC2. É possível anexas instâncias EC2 ao EBS. Sua característica é a fácil escalabilidade e redundância por conta do armazenamento em blocos.
+   É projetado para ser usado em instâncias separadas, ou seja, uma duas instâncias não podem possuir o mesmo volume EBS
+1. **O que é Elastic File System - EFS**
+   - É um sistema de armazenamento de arquivos, que pode ser escalável por arquivos (e cobrados por arquivo). Além disso, pode ser compartilhando entre instâncias e acessado pela internet.
+1. **O que é Amazon Storage Gateway**
+   - É um serviço de armazenamento na nuvem híbrida que permite acesso de serviços on premises a dados salvos no ambiente de cloud.
+1. **O que é AWS Backups**
 
 # Computacionais
 

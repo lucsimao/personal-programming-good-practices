@@ -420,8 +420,36 @@
 
 **Macie**
 
-- dados sensíveis
+- identifica dados confidenciais
 
 **License Manager**
 
 **Simple Email Services**
+
+**S3 Transfer Accelerator**
+
+- Rápida transferência via s3
+
+**Guard Duty**
+
+- Inteligência Artificial e analisa dados gerados por eventos de diversos serviços e armazenados no S3, evitando que atividades maliciosas sejam realizadas
+
+**AWS Amplify**
+
+- Grupo de ferramentas que permitem desenvolvedores front-end web e mobile criar aplicações full stack
+
+**Amazon AppFlow**
+
+- Transferir dados com segurança entre SaaS
+
+**AWS CodeStar**
+
+- esteira para publicar facilmente aplicativos na web
+
+**BeanStalk**
+
+- permite a codificação em .Net, Java, PHP, Node.js, Python, Ruby e Go entre outras.
+
+**Inspector**
+
+- Trusted advisor
